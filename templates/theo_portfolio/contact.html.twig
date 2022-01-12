@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Contact Page{% endblock %}</title>
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
+        <link rel= "stylesheet" href="https://bootswatch.com/5/vapor/bootstrap.min.css">
+        {% block stylesheets %} {% endblock %}
+    </head>
+<body>
+{% block body %}{% endblock %}
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-uppercase fixed-top">
+            <div class="container-fluid">
+                            <a href ="/portfolio"><button type="button" class="btn btn-primary">Portfolio</button> </a>
+                            <a href ="/loisirs"><button type="button" class="btn btn-secondary">Mes Loisirs</button> </a>
+                            <a href ="/"><button type="button" class="btn btn-success">Accueil</button> </a>
+                            <a href ="/cv"><button type="button" class="btn btn-info">Mon Cv</button> </a>
+                            <a href ="/contact"><button type="button" class="btn btn-danger">Me Contactez</button> </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+{% block javascripts %}{% endblock %}
+<!--Section: Contact -->
+ <section class="mb-4">
+    
+    <p>&nbsp;</p>
+    <!--En tete-->
+    <h1 class="h1-responsive font-weight-bold text-center my-4">Contactez moi</h1>
+    <!--Section description-->
+    <span title="Pose les en dessous"><center><h3 class="text-center w-responsive mx-auto mb-5">Avez-vous des questions?</h3></center></span>
+
+    <div class="row">
+<!--Bienvenue dans la section contact :) -->
+<!--J'espere qu'elle vous plaiera -->
+    
+        <div class="col-md-12 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form" action="mail.php">
+                 <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="md-form mb-0"> 
+                        <div class = "form-group">
+                            <label for="exampleInputEmail1" ><span title="exemple@mail.com"><label for="email" class=""><h4>Ton email</h4></label></span>
+                            <input type="email" id="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="exemple@exemple.fr">
+                            
+                            <small id="emailHelp" class="form-text text-muted">Attention a ne pas mettre fausse adresse mail</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <center><div class="col-md-12 text-center">
+                        <div class="md-form mb-0">
+                            <label for="exampleInputEmail1" ><span title="Le sujet de ton projet avec moi "> <label for="subject" class=""><h4>Sujet</h4></label> </span>
+                            <input type="text" id="subject" name="subject" class="form-control" placeholder="Ton sujet">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                   <center> <div class="col-md-8 text-center">
+                        <div class="md-form">
+                           <span title="Ecris moi :) "> <label for="message"><h4>Ton message</h4></label> </span>
+                            <textarea id="text-val"type="text" id="message" name="message" rows="4" class="form-control md-textarea" placeholder="Ecris-moi ici :)"></textarea>
+                        </div></center>
+                    </div>
+                </div>
+           
+
+
+            </form> 
+        </div>
+    </div>
+
+            <center><div class="form-group">
+                <label for="exampleInputEmail1" > <label for="formFile" class="form-label mt-4"><center>Envoie moi tes projets</center></label>
+                <input class="form-control" type="file" id="formFile" placeholder="Choisis tes fichiers ou dossier à m'envoyer">
+            </div></center>
+<br>
+            <div class="text-center text-md-left" type="submit">
+               <a  href="/succesful" class="btn btn-primary">Envoyez</a>
+            </div>
+            <div class="status"></div>
+        </div>
+    </div>
+    <p>&nbsp;</p>
+        <center><div class="card border-primary mb-3 " style="max-width: 42rem;"> 
+          <div class="col-md-12 text-center">
+                <li><i class="fas fa-map-marker-alt fa-4x"></i>
+                    <h2>- 📍 : Roanne, 42300 , FR</h2>
+                </li>
+
+                <li><i class="fas fa-phone mt-4 fa-6x"></i>
+                    <h2>- 📱 : +33 07 82 83 81 96</h2>
+                </li>
+
+                <li><i class="fas fa-envelope mt-4 fa-12x"></i>
+                    <h2>- 📧 : theo.dufour@etu.univ-st-etienne.fr</h2>
+                </li>
+            </ul>
+            <br>
+            <p>
+            
+            <p>
+          
+        </div>
+          
+    </div>
+        </div>
+ 
+      
+
+
+    </div></center>
+
+</section>
+<footer class="footer text-center mb-0">
+    <div class="container mb-0">
+        <div class="row mb-0">
+            <div class="col-md-3 mb-5 mb-lg-0">
+                <h4 class="text-uppercase mb-4">Téléphone</h4>
+                <p class="lead mb-0">+33 7 82 83 81 96</p>
+            </div>
+        <div class="col-md-5 mb-12 mb-lg-15">
+            <h4 class="text-uppercase mb-4">Adresse</h4>
+            <p class ="lead mb-0">Roanne.</p>
+        </div>
+       <div class="col-md-3 mb-5 mb-lg-4">
+        <h4 class="text-uppercase mb-4">Sur le net</h4>
+        <ul class="list-inline mb-0">
+            <li class="list-inline-item">
+                     <span title="C'est mon github clique pour voir mes projets"><a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://github.com/TheoDfr"><img class="img-fluid" src ="/img/git.png" width="32rem;"</span></img>
+					  <i class="fas fa-sitemap"></i>
+					</a>
+        </ul>
+    </div>
+<p>&nbsp;</p>
+<div class"col-md-3">
+    <h4 class="text-uppercase mb-4">A propos de ce site</h4>
+    <p class="lead mb-0">
+         Site créer avec
+        <a href="https://symfony.com/4">Symfony</a>, Twig et
+        <a href="https://bootswatch.com">Bootswatch</a>
+        .
+        <br>Site créer par Theo Dufour© Copie Interdite !
+    </p>
+</div>
+</div>
+<p>&nbsp;</p>
+</div>
+</footer>
+<div class="scroll-to-top d-lg-none position-fixed" style="display: block;">
+    <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+        <i class="fa fa-chevron up">
+         ::before
+        </i>
+    </a>
+
+</body>
+</html>
