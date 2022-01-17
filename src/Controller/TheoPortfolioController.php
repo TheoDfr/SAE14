@@ -79,5 +79,12 @@ class TheoPortfolioController extends AbstractController
     /**
      * @Route("/nouvelpage", name="nouvelpage")
      */
+    public function nouvelpage(): Response
+    {
+        return $this->render('theo_portfolio/test.html.twig', [
+            'controller_name' => 'TheoPortfolioController',
+        ]);
+      
+    }
 
 }
